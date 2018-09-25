@@ -80,7 +80,7 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = Integer.parseInt(sc.nextLine());
-        percolate obj = new percolate(input);
+        Percolate obj = new Percolate(input);
         while (sc.hasNextLine()) {
             String[] inputs = sc.nextLine().split(" ");
             obj.open(Integer.parseInt(inputs[0]) - 1,
@@ -93,7 +93,7 @@ final class Solution {
 /**
  * Class for percolate.
  */
-class percolate {
+class Percolate {
     /**
      * var_description.
      */
@@ -111,7 +111,7 @@ class percolate {
      *
      * @param      size1  The size
      */
-    percolate(final int size1){
+    Percolate(final int size1) {
         this.size = size1;
         grid = new boolean[size][size];
         obj = new WeightedQuickUnionUF(size * size + 2);

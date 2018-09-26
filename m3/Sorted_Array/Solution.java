@@ -40,7 +40,7 @@ class Sort {
         while (i < len1) 
             res[k++] = a1[i++]; 
       
-        while (j < len1) 
+        while (j < len2) 
             res[k++] = a2[j++];
         while(len1 == 0) {
             for(p = 0; p < len1; p++) {

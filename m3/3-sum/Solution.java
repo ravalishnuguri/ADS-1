@@ -10,12 +10,11 @@ class Solution {
             arr[i] = Integer.parseInt(sc.nextLine());
         }
         u.counntof(arr);
-        System.out.println(u.counntof(arr));
     }
 }
 class sum {
     sum() { }
-    public int counntof(int[] arr1) {
+    public void counntof(int[] arr1) {
         int count = 0;
 
         Arrays.sort(arr1); 
@@ -41,7 +40,7 @@ class sum {
                 }
             }
         }
-        return count;
+        System.out.println(count);
     }
 public static int binarySearch(int[] a, int key, int lo) {
          int hi = a.length-1;

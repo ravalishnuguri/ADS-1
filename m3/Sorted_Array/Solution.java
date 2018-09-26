@@ -7,8 +7,8 @@ class Solution {
         int size2 = sc.nextInt();
         System.out.println(size1);
         System.out.println(size2);
-        // int[] arr1 = new int[size1];
-        // int[] arr2 = new int[size2];
+        int[] firstarr = new int[size1];
+        int[] secondarr = new int[size2];
         String[] arr1 = sc.nextLine().split(",");
         String[] arr2 = sc.nextLine().split(",");
         System.out.println(Arrays.toString(arr1));

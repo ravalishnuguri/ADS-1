@@ -47,7 +47,7 @@ class Sum {
                 num = -1 * (arr1[i] + arr1[j]);
                     if (binarySearch(arr1, num, j + 1) != -1) {
                         count++;
-                    }   
+                    }
             }
         }
         System.out.println(count);
@@ -61,14 +61,15 @@ class Sum {
      *
      * @return     { description_of_the_return_value }
      */
-public static int binarySearch(final int[] a, final int key, int lo) {
+public static int binarySearch(final int[] a, final int key, final int lo) {
+        int low = lo;
          int hi = a.length - 1;
-         while (lo <= hi) {
-         int mid = lo + (hi - lo) / 2;
+         while (low <= hi) {
+         int mid = low + (hi - low) / 2;
          if (key < a[mid]) {
             hi = mid - 1;
          } else if (key > a[mid]) {
-            lo = mid + 1;
+            low = mid + 1;
         } else {
         return mid;
         }

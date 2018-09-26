@@ -18,15 +18,15 @@ class sum {
         int count = 0;
         Arrays.sort(arr1);
         int size = arr1.length;
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size-1; i++) {
             int num = 0;
             for (int j = i+1; j < size; j++) {
                 num = -1 * (arr1[i] + arr1[j]);
-                for (int k = j+1; k < size;k = k / 2) {
-                    if (binarySearch(arr1, num, k)!= -1) {
+                
+                    if (binarySearch(arr1, num, j+1)!= -1) {
                         count++;
                     }
-                }
+                
             }
         }
         System.out.println(count);

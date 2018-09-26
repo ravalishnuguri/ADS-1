@@ -59,7 +59,7 @@ class Sort {
         int[] res = new int[len1 + len2];
         int i = 0, j = 0, k = 0;
         int p;
-        while (i < len1 && j < len2) { 
+        while (i < len1 && j < len2) {
             if (a1[i] < a2[j]) {
                 res[k++] = a1[i++];
             } else {

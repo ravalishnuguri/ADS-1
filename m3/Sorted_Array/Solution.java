@@ -5,6 +5,8 @@ class Solution {
         Scanner sc = new Scanner(System.in);
         int size1 = sc.nextInt();
         int size2 = sc.nextInt();
+        System.out.println(size1);
+        System.out.println(size2);
         // int[] arr1 = new int[size1];
         // int[] arr2 = new int[size2];
         String[] arr1 = sc.nextLine().split(",");

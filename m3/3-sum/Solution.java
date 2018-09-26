@@ -23,20 +23,26 @@ class sum {
             int num = 0;
             for (int j = i+1; j < size; j++) {
                 num = -1 * (arr1[i] + arr1[j]);
-                for (int k = j; k < size;k = k / 2) {
-                    int lo = arr1[k];
-                    int hi = arr1[size-1];
-                    int mid = lo + (hi - lo) / 2;
-                    if (num < arr1[mid]) {
-                        hi = mid - 1;
-                    } else if (num > arr1[mid]) {
-                        lo = mid + 1;
-                    } else {
-                        count++;
-                    }
-                }
+                // for (int k = j; k < size;k = k / 2) {
+                //     int lo = arr1[k];
+                //     int hi = arr1[size-1];
+                //     int mid = lo + (hi - lo) / 2;
+                //     if (num < arr1[mid]) {
+                //         hi = mid - 1;
+                //     } else if (num > arr1[mid]) {
+                //         lo = mid + 1;
+                //     } else {
+                //         count++;
+                //  }
+                //}
             }
         }
         return count;
     }
+}
+
+
+class binary {
+
+
 }

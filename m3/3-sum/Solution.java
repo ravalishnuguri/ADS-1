@@ -15,7 +15,7 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        sum u = new sum();
+        Sum u = new Sum();
         int size = Integer.parseInt(sc.nextLine());
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
@@ -27,11 +27,11 @@ final class Solution {
 /**
  * Class for sum.
  */
-class sum {
+class Sum {
     /**
      * Constructs the object.
      */
-    sum() { }
+    Sum() { }
     /**
      * function_description.
      *
@@ -45,11 +45,9 @@ class sum {
             int num = 0;
             for (int j = i + 1; j < size; j++) {
                 num = -1 * (arr1[i] + arr1[j]);
-                
-                    if (binarySearch(arr1, num, j + 1) != - 1) {
+                    if (binarySearch(arr1, num, j + 1) != -1) {
                         count++;
-                    }
-                
+                    }   
             }
         }
         System.out.println(count);
@@ -69,8 +67,7 @@ public static int binarySearch(final int[] a, final int key, int lo) {
          int mid = lo + (hi - lo) / 2;
          if (key < a[mid]) {
             hi = mid - 1;
-         }
-         else if (key > a[mid]) {
+         } else if (key > a[mid]) {
             lo = mid + 1;
         } else {
         return mid;

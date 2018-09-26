@@ -9,6 +9,7 @@ class Solution {
         for (int i = 0;i<size;i++) {
             arr[i] = Integer.parseInt(sc.nextLine());
         }
+        u.counntof(arr);
         System.out.println(u.counntof(arr));
     }
 }

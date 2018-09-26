@@ -19,8 +19,16 @@ class Solution {
         for(int j = 0;j<size2;j++) {
             secondarr[j] = Integer.parseInt(arr2[j]);
         }
+        if(size1==0) {
+            int h;
+            for(h = 0; h<size2-1; h++) {
+                System.out.print(secondarr[h]+",");
+            }
+            System.out.print(secondarr[h]);
+
+        }else {
         s.sortarray(firstarr,secondarr,size1,size2);
-        // s.toString();
+        }        
 
     }
 }

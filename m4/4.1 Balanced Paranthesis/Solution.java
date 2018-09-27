@@ -14,7 +14,14 @@ class Balancedornot {
   /**
    * item_description.
    */
-  private char[] item = new char[1000];
+  private char[] item;
+  /**
+   * Constructs the object.
+   */
+  Stack() {
+    final int num = 1000;
+    item = new char[num];
+  }
   /**
    * function_description.
    *

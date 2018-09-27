@@ -12,13 +12,9 @@ class Balancedornot {
      */
   private int top = -1;
   /**
-   * var_description.
-   */
-final int number = 1000;
-  /**
    * item_description.
    */
-  private char item[] = new char[number];
+  private char[] item = new char[1000];
   /**
    * function_description.
    *
@@ -83,7 +79,7 @@ final int number = 1000;
                } else if (!balancedparenthesis(st.pop(), exp[i])) {
                    return "NO";
                }
-          }   
+          }
        }
       if (st.isEmpty()) {
          return "YES";

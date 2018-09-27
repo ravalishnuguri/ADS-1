@@ -14,7 +14,10 @@ class Balancedornot {
   /**
    * var_description.
    */
-  final int number = 1000;
+final int number = 1000;
+  /**
+   * item_description.
+   */
   private char item[] = new char[number];
   /**
    * function_description.
@@ -52,14 +55,14 @@ class Balancedornot {
  * @return     { description_of_the_return_value }
  */
   public boolean balancedparenthesis(final char c1, final char c2) {
-       if (c1 == '(' && c2 == ')')
+       if (c1 == '(' && c2 == ')') {
          return true;
-       else if (c1 == '{' && c2 == '}')
+       } else if (c1 == '{' && c2 == '}') {
          return true;
-       else if (c1 == '[' && c2 == ']')
+       } else if (c1 == '[' && c2 == ']') {
          return true;
-       else
-         return false;
+       }
+       return false;
     }
     /**
      * function_description.
@@ -70,32 +73,29 @@ class Balancedornot {
      */
   public String balanced(final char[] exp) {
     Stack st = new Stack();
-    for(int i = 0; i < exp.length; i++) {
+    for (int i = 0; i < exp.length; i++) {
       if (exp[i] == '{' || exp[i] == '(' || exp[i] == '[') {
             st.push(exp[i]);
           }
       if (exp[i] == '}' || exp[i] == ')' || exp[i] == ']') {
              if (st.isEmpty()) {
                    return "NO";
-               }
-      else if (!balancedparenthesis(st.pop(), exp[i])) {
+               } else if (!balancedparenthesis(st.pop(), exp[i])) {
                    return "NO";
                }
-          }
-           
+          }   
        }
-       
       if (st.isEmpty()) {
          return "YES";
   } else {
              return "NO";
-         } 
+         }
     }
 }
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
   /**
    * Constructs the object.
    */

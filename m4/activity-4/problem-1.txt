@@ -1,0 +1,26 @@
+INPUT:- it was - the best - of times - - - it was - the - -
+
+push     pop         N
+                     0
+it                   1
+was                  2
+-        was         -
+the                  2
+best                 3
+-        best        -
+of                   3
+times                4
+-        times       -
+-        of          -
+-        them        -
+it                   1
+was                  2
+-        was         -
+the                  2
+-        the         - 
+-        it          -
+
+
+******
+The reamining elements in the stack are : it
+the elements that are popped are : was,best,times,of,them,was,this,it

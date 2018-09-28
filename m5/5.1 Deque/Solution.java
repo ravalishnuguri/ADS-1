@@ -1,17 +1,29 @@
-import java.util.*;
+import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 public class Solution {
-    public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() { }
+	/**
+	 * function_description.
+	 *
+	 * @param      args  The arguments
+	 */
+    public static void main(final String[] args) {
         Deque dequeue = new Deque();
         //LinkedList linklist = new LinkedList();
         Scanner s = new Scanner(System.in);
         String s1 = s.nextLine();
         int num = Integer.parseInt(s1);
         int j = 0;
-        while(j < num) {
+        while (j < num) {
         String[] tokens = s.nextLine().split(" ");
         //System.out.println(tokens[0] + "  " + tokens[1]);
 
-            switch(tokens[0]) {
+            switch (tokens[0]) {
                 case "pushLeft" :
                                  dequeue.addFirst(Integer.parseInt(tokens[1]));
                                  //System.out.println("hello");
@@ -22,7 +34,7 @@ public class Solution {
                                  System.out.println(dequeue.display());
                                  break;
                 case "popLeft":
-                                if(!dequeue.isempty()) {
+                                if (!dequeue.isempty()) {
                                 dequeue.removeFirst();
                                 System.out.println(dequeue.display());
                             } else {
@@ -31,7 +43,7 @@ public class Solution {
                                 //System.out.println(linklist);
                                 break;
                 case "popRight":
-                                if(!dequeue.isempty()) {
+                                if (!dequeue.isempty()) {
                                 dequeue.removeLast();
                                 System.out.println(dequeue.display());
                             } else {
@@ -42,6 +54,8 @@ public class Solution {
                             int size = dequeue.size();
                             System.out.println(size);
                             break;
+                default:
+                break;
             }
             j++;
 

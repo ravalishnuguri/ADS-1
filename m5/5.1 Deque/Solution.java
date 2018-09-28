@@ -58,7 +58,6 @@ final class Solution {
                 break;
             }
             j++;
-
         }
     }
 }

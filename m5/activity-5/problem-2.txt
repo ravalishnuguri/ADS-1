@@ -1,0 +1,7 @@
+In the given code fragment :
+1.It will first create a stack object.
+2.it will check whethter the queue is empty or not and if not then it will pop the elements.
+3.that elements are pushed into that stack.
+4.later, It will check whether the stack is empty or not and if not then it will pop the elements from the stack.
+5.That elements are later pushed into the queue.
+6.We can say that the function of this fragment of code is to perform a reverse of elemnet operation on the elements in the queue.

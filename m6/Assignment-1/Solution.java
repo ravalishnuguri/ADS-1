@@ -14,15 +14,19 @@ class AddLargeNumbers {
     }
 
     public static String digitsToNumber(LinkedList list) {
-        // String s = "";
-        // while (!list.isEmpty()) {
-        //     list.pop();
-        // }
         return list.displayAll();
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-        return list1;
+        LinkedList result = new LinkedList();
+        int size1 = list1.getsize();
+        int size2 = list2.getsize();
+        // if (size1 == size2) {
+        //     for (int i = 0; i < size1; i++) {
+        //         result.push(list1.pop()+list2.pop());
+        //     }
+        // }
+        return result;
     }
 }
 

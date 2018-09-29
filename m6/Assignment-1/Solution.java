@@ -9,7 +9,9 @@ class AddLargeNumbers {
         for(int i = 0;i < size;i++) {
             nm.push(arr[i]);
         }
+        System.out.println(nm);
         return nm;
+
     }
 
     public static String digitsToNumber(LinkedList list) {

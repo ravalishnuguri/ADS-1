@@ -44,7 +44,7 @@ final class AddLargeNumbers {
      */
     public static LinkedList addLargeNumbers(final LinkedList list1,
         final LinkedList list2) {
-        // LinkedList result = new LinkedList();
+        LinkedList result = new LinkedList();
         // int size1 = list1.getsize();
         // int m = 0;
         // int n = 0;
@@ -67,7 +67,19 @@ final class AddLargeNumbers {
         //     result.push(Integer.toString(a3[z]));
         // }
         // return result;
-        return list2;
+        String s = "";
+        String o = "";
+        s = list1.displayAll();
+        o = list2.displayAll();
+        int x = Integer.parseInt(s) + Integer.parseInt(o);
+        String s1 = Integer.toString(x);
+        int size = s1.length();
+        String[] array1 = new String[size];
+        array1 = s1.split("");
+        for (int i = 0; i < size; i++) {
+            result.push(array1[i]);
+        }
+        return result;
     }
 }
 /**

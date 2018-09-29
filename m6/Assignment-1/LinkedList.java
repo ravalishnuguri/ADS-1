@@ -14,7 +14,7 @@ class LinkedList {
     public boolean isEmpty() {
         return head == null;
     }
-    public void pop() {
+    public String pop() {
         if (tail != null) {
        Node temp = head;
        while(temp.next.next != null) {
@@ -25,6 +25,7 @@ class LinkedList {
         tail = temp;
         size--;
     }
+    return null;
     }
     // public void push(final String value) {
     //     if(head == null) {

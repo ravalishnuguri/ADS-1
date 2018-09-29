@@ -20,12 +20,26 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         LinkedList result = new LinkedList();
         int size1 = list1.getsize();
+        int m = 0;
+        int n = 0;
+        String[] a1 = new String[size1];
         int size2 = list2.getsize();
-        // if (size1 == size2) {
-        //     for (int i = 0; i < size1; i++) {
-        //         result.push(list1.pop()+list2.pop());
-        //     }
-        // }
+        String[] a2 = new String[size2];
+        int[] a3 = new int[size1];
+        while(!list1.isEmpty()) {
+            a1[m] = list1.pop();
+            m++;
+        }
+        while(!list2.isEmpty()) {
+            a2[n] = list2.pop();
+            n++;
+        }
+        for (int k = 0; k<size1;k++) {
+            a3[k] = Integer.parseInt(a1[k]) + Integer.parseInt(a2[k]);
+        }
+        for(int z = 0;z < a3.length;z++) {
+            result.push(Integer.toString(a3[z]));
+        }
         return result;
     }
 }

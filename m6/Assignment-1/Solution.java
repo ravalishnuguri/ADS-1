@@ -6,7 +6,7 @@ class AddLargeNumbers {
     /**
      * Constructs the object.
      */
-   AddLargeNumbers() { }
+   private AddLargeNumbers() { }
    /**
     * function_description.
     *
@@ -105,5 +105,5 @@ final class Solution {
                 default:
                 break;
         }
-    }   
+    }
 }

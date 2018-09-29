@@ -62,14 +62,26 @@ public void push(String value) {
         return size;
     }
      //Function to print linked list 
-    void printlist(Node next) 
+    void printlist() 
     { 
         while (head != null) 
         { 
             System.out.print(head.value); 
             head = head.next; 
         } 
-    } 
+    }
+    public String displayAll() {
+        if(size!=0) {
+            String s = "";
+            Node temp = head;
+            while(temp!=null){
+                s += temp.value;
+                temp = temp.next;
+            }
+            return s;
+        }
+        return null;
+    }
 }
 
 

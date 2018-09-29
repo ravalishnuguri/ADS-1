@@ -9,17 +9,16 @@ class AddLargeNumbers {
         for(int i = 0;i < size;i++) {
             nm.push(arr[i]);
         }
-        System.out.println(nm);
         return nm;
 
     }
 
     public static String digitsToNumber(LinkedList list) {
-        String s = "";
-        while (!list.isEmpty()) {
-            list.pop();
-        }
-        return s;
+        // String s = "";
+        // while (!list.isEmpty()) {
+        //     list.pop();
+        // }
+        return list.displayAll();
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {

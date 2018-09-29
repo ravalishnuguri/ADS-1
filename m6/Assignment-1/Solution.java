@@ -71,8 +71,8 @@ final class AddLargeNumbers {
         String o = "";
         s = list1.displayAll();
         o = list2.displayAll();
-        int x = Integer.parseInt(s) + Integer.parseInt(o);
-        String s1 = Integer.toString(x);
+        long x =  Long.parseLong(s) +  Long.parseLong(o);
+        String s1 = Long.toString(x);
         int size = s1.length();
         String[] array1 = new String[size];
         array1 = s1.split("");

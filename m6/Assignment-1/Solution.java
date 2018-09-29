@@ -6,7 +6,7 @@ class AddLargeNumbers {
     /**
      * Constructs the object.
      */
-   // private addLargeNumbers() { }
+   AddLargeNumbers() { }
    /**
     * function_description.
     *
@@ -19,7 +19,7 @@ class AddLargeNumbers {
         int size = number.length();
         String[] arr = new String[size];
         arr = number.split("");
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             nm.push(arr[i]);
         }
         return nm;
@@ -42,7 +42,8 @@ class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+        final LinkedList list2) {
         // LinkedList result = new LinkedList();
         // int size1 = list1.getsize();
         // int m = 0;
@@ -72,7 +73,7 @@ class AddLargeNumbers {
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -87,7 +88,7 @@ public class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
-        switch (input){
+        switch (input) {
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
                 LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
@@ -98,15 +99,11 @@ public class Solution {
             case "addLargeNumbers":
                 pDigits = AddLargeNumbers.numberToDigits(p);
                 qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+    LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
                 default:
                 break;
         }
-    }
-    
+    }   
 }
-
-    
-

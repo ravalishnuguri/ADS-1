@@ -1,4 +1,4 @@
-class Teamdetails {
+class Teamdetails implements Comparable<Teamdetails> {
 	private String teamname;
 	private int wins;
 	private int losses;
@@ -15,10 +15,28 @@ class Teamdetails {
 	public int getWins() {
 		return this.wins;
 	}
-	public int getLosses() {
+	public int getLoss() {
 		return this.losses;
 	}
 	public int getDraws() {
 		return this.draws;
 	}
+	public int compareTo(final Teamdetails that) {
+        if (this.getWins() > that.getWins()) {
+            return 1;
+        } else if (this.getWins() < that.getWins()) {
+            return -1;
+        }
+        if (this.getLoss() < that.getLoss()) {
+            return 1;
+        } else if (this.getLoss() > that.getLoss()) {
+            return -1;
+        }
+        if (this.getDraws() > that.getDraws()) {
+            return 1;
+        } else if (this.getDraws() < that.getDraws()) {
+            return -1;
+        }
+        return 0;
+    }
 }

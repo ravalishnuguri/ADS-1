@@ -4,12 +4,26 @@ class Solution {
 	private Solution() { }
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		String[] str = new String[7];
-		int i = 0;
-		while(s.hasNextLine()) {
-			str[i] = s.nextLine();
-			i++;
+		Insertion in = new Insertion();
+		while (s.hasNext()) {
+			String line = s.nextLine();
+        	String[] tokens = line.split(",");
+        	in.add(new Teamdetails(tokens[0],Integer.parseInt(tokens[1]),Integer.parseInt(tokens[2]),Integer.parseInt(tokens[3])));
 		}
-		System.out.println(Arrays.toString(str));
+		in.insertionsort();
+		System.out.println(in);
 	}
 }
+
+
+ // public static void main(final String[] args) {
+ //        Scanner scan = new Scanner(System.in);
+ //        InsertionSort isobj = new InsertionSort();
+ //        while (scan.hasNext()) {
+ //            String[] tokens = scan.nextLine().split(",");
+ //            isobj.add(new Tournament(tokens[0], Integer.parseInt(tokens[1]),
+ //            Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1])));
+ //        }
+ //        isobj.insertionsort();
+ //        System.out.println(isobj);
+ //    }

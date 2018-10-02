@@ -1,48 +1,24 @@
 final class LinkedList {
-    /**
-     * @brief [brief description]
-     * @details [long description]
-     */
     private Node head;
     private Node tail;
     private int size;
-    /**node.**/
+
     class Node {
-        /**
-         * variable.
-         */
+
         private int value;
-        /**
-         * variable.
-         */
         private Node next;
-        /**
-         * variable.
-         */
 
     }
-    /**
-     * @brief [brief description]
-     * @details [long description]
-     */
+
     LinkedList() {
         head = tail;
         head = null;
         size = 0;
     }
-    /**
-     * @brief [brief description]
-     * @details [long description]
-     * @return value
-     */
+
     public boolean isEmpty() {
         return head == null;
     }
-    /**
-     * @brief [brief description]
-     * @details [long description]
-     * @return value
-     */
     public void erasefront() {
         if (head!=null) {
         head = head.next;
@@ -61,9 +37,7 @@ final class LinkedList {
         size--;
     }
     }
-    /**
-     * @param value value
-     */
+
     public void Insertfront(final int value) {
         if(head == null) {
         //Node oldHead = head;
@@ -98,17 +72,5 @@ public void Insertback(final int value) {
     }
     public int getsize() {
         return size;
-    }
-    public String displayAll() {
-        if(size!=0) {
-            String s = "[";
-            Node temp = head;
-            while(temp!=null){
-                s += temp.value + ", ";
-                temp = temp.next;
-            }
-            return s.substring(0,s.length()-2) + "]";
-        }
-        return "[]";
     }
 }

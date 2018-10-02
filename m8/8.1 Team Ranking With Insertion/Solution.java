@@ -4,7 +4,7 @@ class Solution {
 	private Solution() { }
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		String[] str = new String[20];
+		String[] str = new String[7];
 		int i = 0;
 		while(s.hasNextLine()) {
 			str[i] = s.nextLine();

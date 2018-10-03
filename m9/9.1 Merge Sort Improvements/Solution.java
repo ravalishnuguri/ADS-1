@@ -3,9 +3,9 @@ import java.util.Scanner;
  * Class for merge.
  */
 class Merge {
-	/**
-	 * var_description.
-	 */
+    /**
+     * var_description.
+     */
     private static final int CUTOFF = 7;
     /**
      * Constructs the object.
@@ -20,7 +20,9 @@ class Merge {
      * @param      mid       The middle
      * @param      hi        The higher
      */
-    private static void merge(final Comparable[] array, final Comparable[] newarray, final int lo, final int mid, final int hi) {
+    private static void merge(final Comparable[] array,
+        final Comparable[] newarray, final int lo,
+        final int mid, final int hi) {
         assert isSorted(array, lo, mid);
         assert isSorted(array, mid + 1, hi);
 
@@ -49,7 +51,8 @@ class Merge {
      * @param      lo        The lower
      * @param      hi        The higher
      */
-    private static void sort(final Comparable[] array, final Comparable[] newarray, final int lo, final int hi) {
+    private static void sort(final Comparable[] array,
+        final Comparable[] newarray, final int lo, final int hi) {
         if (hi <= lo + CUTOFF) {
             insertionSort(newarray, lo, hi);
             System.out.println("Insertion sort method invoked...");
@@ -60,10 +63,11 @@ class Merge {
         sort(newarray, array, mid + 1, hi);
 
         if (!less(array[mid + 1], array[mid])) {
-           for (int i = lo; i <= hi; i++) { 
+           for (int i = lo; i <= hi; i++) {
             newarray[i] = array[i];
             }
-            System.out.println("Array is already sorted. So, skipped the call to merge...");
+            System.out.println("Array is already sorted. " +
+                "So, skipped the call to merge...");
            return;
         }
         merge(array, newarray, lo, mid, hi);
@@ -75,7 +79,7 @@ class Merge {
      */
     public static void sort(final Comparable[] a) {
         Comparable[] aux = a.clone();
-        sort(aux, a, 0, a.length - 1);  
+        sort(aux, a, 0, a.length - 1);
         assert isSorted(a);
     }
     /**
@@ -85,7 +89,8 @@ class Merge {
      * @param      lo    The lower
      * @param      hi    The higher
      */
-    public static void insertionSort(final Comparable[] a,final  int lo,final int hi) {
+    public static void insertionSort(final Comparable[] a, final  int lo,
+        final int hi) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1]); j--) {
                 exch(a, j, j - 1);
@@ -134,11 +139,13 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    public static boolean isSorted(final Comparable[] a, final int lo, final int hi) {
-        for (int i = lo + 1; i <= hi; i++)
+    public static boolean isSorted(final Comparable[] a,
+        final int lo, final int hi) {
+        for (int i = lo + 1; i <= hi; i++) {
             if (less(a[i], a[i - 1])) {
                 return false;
             }
+        }
         return true;
     }
     /**
@@ -162,15 +169,15 @@ class Merge {
  * Class for solution.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() { }
-	/**
-	 * function_description.
-	 *
-	 * @param      args  The arguments
-	 */
+    /**
+     * Constructs the object.
+     */
+    private Solution() { }
+    /**
+     * function_description.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Merge m = new Merge();
         Scanner s = new Scanner(System.in);

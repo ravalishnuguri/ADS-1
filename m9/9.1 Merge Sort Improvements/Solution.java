@@ -32,7 +32,7 @@ class Merge {
     private static void sort(Comparable[] array, Comparable[] newarray, int lo, int hi) {
         if (hi <= lo + CUTOFF) { 
             insertionSort(newarray, lo, hi);
-            // System.out.println("Insertion sort method invoked...");
+            System.out.println("Insertion sort method invoked...");
             return;
         }
         int mid = lo + (hi - lo) / 2;

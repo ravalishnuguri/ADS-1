@@ -1,16 +1,2 @@
 Starting audit...
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:5:21: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:23: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:25:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:35:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:51:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:51:12: Variable 'data' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:52:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:52:10: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:53:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:53:10: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] E:\MSIT\ADS-1\m10\10.1 LinkedList using Recursion\Solution.java:53:11: Parameter val should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 13 errors.

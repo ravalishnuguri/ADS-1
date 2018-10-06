@@ -19,6 +19,11 @@ public class Student implements Comparable<Student> {
 		this.totmarks = totalmarks;
 		this.category = category1;
 	}
+	public String toString() {
+        String n = "";
+        n = this.name + "," + this.totmarks + "," + this.category;
+        return n;
+    }
 	public String getName() {
 		return this.name;
 	}

@@ -17,26 +17,33 @@ class Solution {
 	 * @param      sc       The screen
 	 * @param      st       { parameter_description }
 	 */
-	public static void mertiList(final Student[] a, int vacancy, int open, int bc, int sc, int st) {
+	public static String mertiList(final Student[] a, int vacancy, int open, int bc, int sc, int st) {
+		String z = "";
         for (int i = 0; i < a.length && vacancy > 0; i++) {
+
             if (open > 0) {
-                System.out.println(a[i].toString());
+                // System.out.println(a[i].toString());
+                z += a[i].toString() + "\n";
                 open--;
             } else if (a[i].reservationCat.equals("BC") || a[i].reservationCat.equals("SC") || a[i].reservationCat.equals("ST")) {
                 if (a[i].reservationCat.equals("BC") && bc > 0) {
-                    System.out.println(a[i].toString());
+                    // System.out.println(a[i].toString());
+                    z += a[i].toString() + "\n";
                     bc--;
                 } else if (a[i].reservationCat.equals("SC") && sc > 0) {
-                    System.out.println(a[i].toString());
+                    // System.out.println(a[i].toString());
+                    z += a[i].toString() + "\n";
                     sc--;
                 } else if (a[i].reservationCat.equals("ST") && st > 0) {
-                    System.out.println(a[i].toString());
+                    // System.out.println(a[i].toString());
+                    z += a[i].toString() + "\n";
                     st--;
                 } else {
                 }
             }
         }
         vacancy--;
+        return z;
     }
     /**
      * function_description.
@@ -66,7 +73,7 @@ class Solution {
 			}
 			System.out.println(t.Meritorder(students, size));
 			System.out.println();
-			mertiList(students, n1, n2, n3, n4, n5);
+			System.out.println(mertiList(students, n1, n2, n3, n4, n5));
 			} catch (java.lang.NullPointerException exception) {
 				System.out.println("");
 			}

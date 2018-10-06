@@ -35,20 +35,15 @@ class Solution {
         vacancy--;
     }
 		public static void main(String[] args) {
-			Scanner s = new Scanner(System.in);
+			try {
+				Scanner s = new Scanner(System.in);
 			int size = 0;
 			int n= s.nextInt();
-			// System.out.println(n);
 			int n1 = s.nextInt();
-			// System.out.println(n1);
 			int n2 = s.nextInt();
-			// System.out.println(n2);
 			int n3 = s.nextInt();
-			// System.out.println(n3);
 			int n4 = s.nextInt();
-			// System.out.println(n4);
 			int n5 = s.nextInt();
-			// System.out.println(n5);
 			Student[] students = new Student[n+1];
 			Selection t = new Selection();
 			s.nextLine();
@@ -62,5 +57,8 @@ class Solution {
 			System.out.println(t.Meritorder(students, size));
 			System.out.println();
 			mertiList(students, n1, n2, n3, n4, n5);
+			} catch (java.lang.NullPointerException exception) {
+				System.out.println("");
+			}
 		}
 	}

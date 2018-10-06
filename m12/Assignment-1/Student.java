@@ -5,7 +5,7 @@ public class Student implements Comparable<Student> {
 	private int marks2;
 	private int marks3;
 	private int totmarks;
-	private String category;
+	public String reservationCat;
 	private int day;
 	private int month;
 	private int year;
@@ -17,13 +17,18 @@ public class Student implements Comparable<Student> {
 		this.marks2 = m2;
 		this.marks3 = m3;
 		this.totmarks = totalmarks;
-		this.category = category1;
+		this.reservationCat = category1;
 	}
 	public String toString() {
         String n = "";
-        n = this.name + "," + this.totmarks + "," + this.category;
+        n = this.name + "," + this.totmarks + "," + this.reservationCat;
         return n;
     }
+    // public String toString1() {
+    // 	String x = "";
+    // 	x = this.category;
+    // 	return x;
+    // }
 	public String getName() {
 		return this.name;
 	}
@@ -62,7 +67,7 @@ public class Student implements Comparable<Student> {
 		return this.totmarks;
 	}
 	public String getCategory() {
-		return this.category;
+		return this.reservationCat;
 	}
 	public int compareTo(Student that) {
 		if (this.getTotmarks() > that.getTotmarks()) {

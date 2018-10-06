@@ -24,11 +24,6 @@ public class Student implements Comparable<Student> {
         n = this.name + "," + this.totmarks + "," + this.reservationCat;
         return n;
     }
-    // public String toString1() {
-    // 	String x = "";
-    // 	x = this.category;
-    // 	return x;
-    // }
 	public String getName() {
 		return this.name;
 	}
@@ -50,10 +45,6 @@ public class Student implements Comparable<Student> {
 	public int getYear() {
 		return this.year;
 	}
-	// public Boolean bigdate(Student that) {
-
-	// 	return false;
-	// }
 	public int getMarks1() {
 		return this.marks1;
 	}

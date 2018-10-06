@@ -30,43 +30,4 @@ public class Selection {
         }
         return s.substring(0, s.length() - 1);
     }
-    // public String Criteria(Comparable[] array, int size, int op, int bc, int sc, int st) {
-    //     int flag = 0;
-    //     Sort(array, size);
-    //     String s = "";
-    //     for (int i = 0; i < op; i++) {
-    //         s += array[i].toString() + "\n";
-    //     }
-    //     if (bc== 0) {
-    //         flag = 0;
-    //     } else {
-    //         for (int j = 0; j< bc; j++) {
-    //             if (array[j].toString1() == "BC") {
-    //                 s += array[j].toString() + "\n";
-    //             }
-                
-    //         }
-    //     }
-    //     if (sc == 0) {
-    //         flag = 0;
-    //     } else {
-    //         for (int k = 0; k < sc; k++) {
-    //             if (array[k].getCategory() == "SC") {
-    //                 s += array[k].toString() + "\n";
-    //             }
-                
-    //         }
-    //     }
-    //     if (st == 0) {
-    //         flag = 0;
-    //     } else {
-    //         for (int o = 0; o< st; o++) {
-    //             if (array[o].getCategory() == "ST") {
-    //                 s += array[o].toString() + "\n";
-    //             }
-                
-    //         }
-    //     }
-    //     return s;
-    // }
 }

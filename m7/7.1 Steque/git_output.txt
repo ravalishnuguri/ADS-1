@@ -1,0 +1,7 @@
+[master a7ea942] "ads1_m7_a1: 2/2 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 3 insertions(+), 3 deletions(-)
+ create mode 100644 m7/7.1 Steque/md5/score.txt
+ create mode 100644 m7/7.1 Steque/result/score.json
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/ravalishnuguri/ADS-1.git
+   df72295..a7ea942  master -> master

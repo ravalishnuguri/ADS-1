@@ -1,0 +1,60 @@
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input002.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input003.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input004.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input005.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output002.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output003.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output004.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output005.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/problem_id.txt.
+The file will have its original line endings in your working directory.
+[master 94821cb] "ads1_m11_a1: 4/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 29 files changed, 8390 insertions(+)
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/11.1. Cutoff to Insertion Sort.docx
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/Quick.class
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/Solution.class
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/Solution.java
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/check_style_errors.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/git_output.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/input001.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/input002.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/input003.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/input004.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/input005.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/output001.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/output002.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/output003.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/output004.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/output005.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/md5/problem_id.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input001.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input002.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input003.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input004.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/input005.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output001.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output002.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output003.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output004.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output005.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/problem_id.txt
+ create mode 100644 m11/11.1 Cutoff Quicksort to Insertion Sort/testcases_output.txt
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: warning: See http://git.io/iEPt8g for more information.        
+remote: warning: File m11/11.1 Cutoff Quicksort to Insertion Sort/testcases_output.txt is 93.74 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m11/11.1 Cutoff Quicksort to Insertion Sort/testcases/output005.txt is 89.44 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/ravalishnuguri/ADS-1.git
+   a7ea942..94821cb  master -> master

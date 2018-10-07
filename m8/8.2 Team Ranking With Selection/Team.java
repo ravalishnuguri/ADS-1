@@ -16,11 +16,6 @@ public class Team implements Comparable<Team> {
     public String toString() {
         return this.team;
     }
-    /**
-     * Gets the wins.
-     *
-     * @return     The wins.
-     */
     public Integer getWins() {
         return this.wins;
     }

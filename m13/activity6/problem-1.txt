@@ -1,0 +1,136 @@
+Suppose that the sequence P R I O * R * * I * T * Y * * * Q U E * * * U * E (where a letter means insert and an asterisk means remove the maximum) is applied to an initially empty priority queue. Give the sequence of values returned by remove the maximum operations.
+
+Step -1 :
+
+  p
+
+take p as parent.
+
+step-2:
+
+  p          R
+ /   =>     /
+R          P
+
+assign R as child. and exchange because R is greater than P.
+
+step-3::
+
+   R
+  / \
+ P   I
+
+assign I as child.
+
+step-4::
+
+     R
+    / \
+   P   I
+  /
+ O
+
+assign O as child of P.
+
+Step-5::
+since the next element is * remove the max element then the new tree is
+
+    P
+   / \
+  O   I
+
+step-6::
+
+     P                R
+    / \              / \
+   O   I    ==>     P   I
+  /                /
+ R                O
+
+assign R as child of O and exchange the max in order.
+
+Step-7::
+
+since the next element is * remove the max element then the new tree is
+
+   O                P
+  / \      ==>     / \
+ P   I            O   I
+
+Step-8::
+
+since the next element is * remove the max element then the new tree is
+
+  I             O
+ /       ==>   /
+O             I
+
+Step-9::
+assign I as child of O.
+
+   O
+  / \
+ I   I
+
+Step-10::
+since the next element is * remove the max element then the new tree is
+
+   I
+  /
+ I
+
+Step-11::
+assign T as I's child and exchange the max in order.
+
+  I            T
+ / \    ==>   / \
+I   T        I   I
+
+Step-12::
+since the next element is * remove the max element then the new tree is
+  I
+ /
+I
+Step-13::
+assign Y as I's child and exchange the max in order.
+
+   I            Y
+  / \     ==>  / \ 
+ I   Y        I   I
+
+Step-14::
+since the next 3 elements are * remove all the elements in the tree then the tree will be empty
+
+Step-15::
+assign Q as parent and U as child and exchange the max in order.
+
+   Q               U
+  /        ==>    /
+ U               Q
+
+Step-16::
+assign E as U's child
+
+   U
+  / \
+ Q   E
+
+step-17::
+since the next 3 elements are * remove all the elements in the tree then the tree will be empty
+
+Step-18::
+assign U as parent in the tree.
+
+    U
+
+Step-19::
+since the next element is * remove the max element then the tree will be empty
+
+Step-20::
+assign E as parent as it is the last element to be inserted into the tree.
+
+  E
+
+
+
+ 

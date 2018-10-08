@@ -1,0 +1,10 @@
+Starting audit...
+[ERROR] E:\MSIT\ADS-1\m13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\MSIT\ADS-1\m13\13.1 isMinHeap\Solution.java:5: Class Solution should be declared as final. [FinalClass]
+[ERROR] E:\MSIT\ADS-1\m13\13.1 isMinHeap\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\MSIT\ADS-1\m13\13.1 isMinHeap\Solution.java:19:23: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS-1\m13\13.1 isMinHeap\Solution.java:32:47: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\MSIT\ADS-1\m13\13.1 isMinHeap\Solution.java:44:47: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\MSIT\ADS-1\m13\13.1 isMinHeap\Solution.java:55:19: 'if' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 7 errors.

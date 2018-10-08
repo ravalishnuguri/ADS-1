@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\MSIT\ADS-1\m12\Assignment-1\Student.java:32:19: Variable 'reservationCat' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 1 errors.

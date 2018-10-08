@@ -19,18 +19,17 @@ class Solution {
 	 */
 	public static void mertiList(final Student[] a, int vacancy, int open, int bc, int sc, int st) {
         for (int i = 0; i < a.length && vacancy > 0; i++) {
-        	
             if (open > 0) {
                 System.out.println(a[i].toString());
                 open--;
-            } else if (a[i].reservationCat.equals("BC") || a[i].reservationCat.equals("SC") || a[i].reservationCat.equals("ST")) {
-                if (a[i].reservationCat.equals("BC") && bc > 0) {
+            } else if (a[i].getCategory().equals("BC") || a[i].getCategory().equals("SC") || a[i].getCategory().equals("ST")) {
+                if (a[i].getCategory().equals("BC") && bc > 0) {
                     System.out.println(a[i].toString());
                     bc--;
-                } else if (a[i].reservationCat.equals("SC") && sc > 0) {
+                } else if (a[i].getCategory().equals("SC") && sc > 0) {
                     System.out.println(a[i].toString());
                     sc--;
-                } else if (a[i].reservationCat.equals("ST") && st > 0) {
+                } else if (a[i].getCategory().equals("ST") && st > 0) {
                     System.out.println(a[i].toString());
                     st--;
                 } else {

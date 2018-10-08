@@ -29,7 +29,7 @@ public class Student implements Comparable<Student> {
     /**
      * { var_description.
      */
-    public String reservationCat;
+    private String reservationCat;
     /**
      * { var_description.
      */

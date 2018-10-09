@@ -1,3 +1,3 @@
 Q)Suppose that your application will have a huge number of insert operations, but only a few remove the maximum operations. Which priority-queue implementation do you think would be most effective: heap, unordered array, ordered array?
 
-ANS::  Odered array. Because Finding the maximum is constant time.
+ANS::  unordered array. because we shouldn;t have to check the order of keys everytime we are inserting the arrays.

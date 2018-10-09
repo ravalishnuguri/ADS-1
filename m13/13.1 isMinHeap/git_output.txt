@@ -1,0 +1,9 @@
+[master 5e0ce73] "ads1_m13_a1: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 5 files changed, 78 insertions(+), 84 deletions(-)
+ rewrite m13/13.1 isMinHeap/Solution.java (75%)
+ rewrite m13/13.1 isMinHeap/check_style_errors.txt (96%)
+ create mode 100644 m13/13.1 isMinHeap/md5/score.txt
+ create mode 100644 m13/13.1 isMinHeap/result/score.json
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/ravalishnuguri/ADS-1.git
+   f6c06ea..5e0ce73  master -> master

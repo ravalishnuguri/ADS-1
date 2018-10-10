@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\MSIT\ADS-1\m15\15.1 BinarySearchSymbolTable\Solution.java:20: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\MSIT\ADS-1\m15\15.1 BinarySearchSymbolTable\Solution.java:57: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.

@@ -17,7 +17,8 @@ final class Solution {
             String line = sc.nextLine();
             String[] arr = line.split(" ");
             int size = arr.length;
-            Searchtable<String, Integer> st = new Searchtable<String, Integer>(size);
+            Searchtable<String, Integer> st = new Searchtable<String,
+            Integer>(size);
             for (int i = 0; i < size; i++) {
                 st.put(arr[i], i);
             }
@@ -54,4 +55,3 @@ final class Solution {
             }
         }
     }
-    

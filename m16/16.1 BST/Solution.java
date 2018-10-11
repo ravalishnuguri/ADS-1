@@ -3,74 +3,76 @@ import java.util.Scanner;
  * Class for solution.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() { }
-	/**
-	 * { function_description }.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		BST<String, Integer> bs = new BST<String, Integer>(); 
-		while (sc.hasNextLine()) {
-			String st = sc.nextLine();
-			String[] tokens = st.split(",");
-			Book b = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));
-			switch (tokens[0]) {
-				case "put":
-				bs.put(b,Integer.parseInt(tokens[4]));
-				break;
-				case "get":
-				System.out.println(bs.get(b));
-				break;
-				default:
-				break;
-			}
-		}
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() { }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        BST<String, Integer> bs = new BST<String, Integer>();
+        while (sc.hasNextLine()) {
+            String st = sc.nextLine();
+            String[] tokens = st.split(",");
+            Book b = new Book(tokens[1], tokens[2],
+                Float.parseFloat(tokens[2 + 1]));
+            switch (tokens[0]) {
+                case "put":
+                bs.put(b, Integer.parseInt(tokens[2 + 2]));
+                break;
+                case "get":
+                System.out.println(bs.get(b));
+                break;
+                default:
+                break;
+            }
+        }
+    }
 }
 
 /**
  * Class for book.
  */
 class Book {
-	/**
-	 * { var_description.
-	 */
-	private String name;
-	/**
-	 * { var_description.
-	 */
-	private String author;
-	/**
-	 * var_description.
-	 */
-	private Float price;
-	/**
-	 * Constructs the object.
-	 */
-	private Book() { }
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      bname    The bname
-	 * @param      bauthor  The bauthor
-	 * @param      bprice   The bprice
-	 */
-	public Book(final String bname, final String bauthor, final Float bprice) {
-		this.name = bname;
-		this.author = bauthor;
-		this.price = bprice;
-	}
-	/**
-	 * function_description.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	 public String getname() {
+    /**
+     * { var_description.
+     */
+    private String name;
+    /**
+     * { var_description.
+     */
+    private String author;
+    /**
+     * var_description.
+     */
+    private Float price;
+    /**
+     * Constructs the object.
+     */
+    private Book() { }
+    /**
+     * Constructs the object.
+     *
+     * @param      bname    The bname
+     * @param      bauthor  The bauthor
+     * @param      bprice   The bprice
+     */
+    Book(final String bname, final String bauthor,
+        final Float bprice) {
+        this.name = bname;
+        this.author = bauthor;
+        this.price = bprice;
+    }
+    /**
+     * function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
+     public String getname() {
         return this.name;
     }
     /**

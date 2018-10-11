@@ -1,11 +1,2 @@
 Starting audit...
-[ERROR] E:\MSIT\ADS-1\m16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\MSIT\ADS-1\m16\16.1 BST\Solution.java:17: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS-1\m16\16.1 BST\Solution.java:21: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\MSIT\ADS-1\m16\16.1 BST\Solution.java:21:89: '3' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS-1\m16\16.1 BST\Solution.java:24:42: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\MSIT\ADS-1\m16\16.1 BST\Solution.java:24:66: '4' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS-1\m16\16.1 BST\Solution.java:63: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\MSIT\ADS-1\m16\16.1 BST\Solution.java:63:9: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 8 errors.

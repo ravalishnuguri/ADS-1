@@ -13,7 +13,15 @@ class BST<Key extends Comparable<Key>, Value> {
         }
         root = put(root, key, value);
     }
-
+    /**
+     * the time complexity for the method is O(logN).
+     *
+     * @param      root   The root
+     * @param      key    The key
+     * @param      value  The value
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node put(Node root, Book key, Value value) {
         if (root == null) {
             Node n = new Node();
@@ -40,7 +48,14 @@ class BST<Key extends Comparable<Key>, Value> {
     public Value get(Book key) {
         return get(root, key);
     }
-
+    /**
+     * the time complexity for the method is O(logN).
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Value get(Node x, Book key) {
         if (key == null) {
             System.out.println("empty");

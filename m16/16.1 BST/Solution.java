@@ -9,7 +9,7 @@ final class Solution {
     private Solution() { }
     /**
      * { function_description }.
-     *
+     * the time complexity for the main method is O(n).
      * @param      args  The arguments
      */
     public static void main(final String[] args) {

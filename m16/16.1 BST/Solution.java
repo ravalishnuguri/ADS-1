@@ -1,14 +1,25 @@
 import java.util.Scanner;
-class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() { }
-	public static void main(String[] args) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		BST<String, Integer> bs = new BST<String, Integer>(); 
 		while (sc.hasNextLine()) {
 			String st = sc.nextLine();
 			String[] tokens = st.split(",");
-			Book b = new Book(tokens[1],tokens[2],Float.parseFloat(tokens[3]));
-			switch(tokens[0]) {
+			Book b = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));
+			switch (tokens[0]) {
 				case "put":
 				bs.put(b,Integer.parseInt(tokens[4]));
 				break;
@@ -21,37 +32,82 @@ class Solution {
 		}
 	}
 }
+
+/**
+ * Class for book.
+ */
 class Book {
+	/**
+	 * { var_description.
+	 */
 	private String name;
+	/**
+	 * { var_description.
+	 */
 	private String author;
+	/**
+	 * var_description.
+	 */
 	private Float price;
-	Book() { }
-	public Book(String bname, String bauthor, Float bprice) {
+	/**
+	 * Constructs the object.
+	 */
+	private Book() { }
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      bname    The bname
+	 * @param      bauthor  The bauthor
+	 * @param      bprice   The bprice
+	 */
+	public Book(final String bname, final String bauthor, final Float bprice) {
 		this.name = bname;
 		this.author = bauthor;
 		this.price = bprice;
 	}
+	/**
+	 * function_description.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	 public String getname() {
         return this.name;
     }
+    /**
+     * function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String getauthor() {
         return this.author;
     }
+    /**
+     * function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Float getprice() {
         return this.price;
     }
-    public int compareTo(Book that) {
-        if(this.getname().compareTo(that.getname()) > 0) {
+    /**
+     * function_description.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareTo(final Book that) {
+        if (this.getname().compareTo(that.getname()) > 0) {
             return 1;
-        } else if(this.getname().compareTo(that.getname()) < 0) {
+        } else if (this.getname().compareTo(that.getname()) < 0) {
             return -1;
-        } else if(this.getauthor().compareTo(that.getauthor()) < 0) {
+        } else if (this.getauthor().compareTo(that.getauthor()) < 0) {
             return -1;
-        } else if(this.getauthor().compareTo(that.getauthor()) > 0) {
+        } else if (this.getauthor().compareTo(that.getauthor()) > 0) {
             return 1;
-        } else if(this.getprice() > that.getprice()) {
+        } else if (this.getprice() > that.getprice()) {
             return 1;
-        } else if(this.getprice() < that.getprice()) {
+        } else if (this.getprice() < that.getprice()) {
             return -1;
         } else {
             return 0;

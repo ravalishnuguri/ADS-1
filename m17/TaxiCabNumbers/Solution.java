@@ -22,7 +22,7 @@ class CubeSum implements Comparable<CubeSum> {
      * @param      j1    The j 1
      */
     CubeSum(final int i1, final int j1) {
-        this.sum = i1*i1*i1+j1+j1*j1;
+        this.sum = i1 * i1 *  i1 + j1 * j1 * j1;
         this.i = i1;
         this.j = j1;
     }
@@ -62,7 +62,7 @@ class CubeSum implements Comparable<CubeSum> {
      * @return     { description_of_the_return_value }
      */
     public int compareTo(final CubeSum that) {
-        if (this.sum < that.sum) {
+        if (this.sum > that.sum) {
             return -1;
         }
         if (this.sum > that.sum) {

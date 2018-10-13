@@ -14,10 +14,11 @@ final class Solution {
      */
     public static void main(final String[] args) {
         try {
+            final int mag = 6;
             Scanner sc = new Scanner(System.in);
         BST<String, Integer> bs = new BST<String, Integer>();
         int n = sc.nextInt();
-        for (int i = 1; i <= (6 * n); i++) {
+        for (int i = 1; i <= (mag * n); i++) {
             String str = sc.nextLine();
             String[] tokens = str.split(",");
             Stockdata sd = new Stockdata(tokens[0],
@@ -54,7 +55,9 @@ final class Solution {
         }
     }
 }
-
+/**
+ * Class for stockdata.
+ */
 class Stockdata {
     /**
      *  the variable for stocknames.

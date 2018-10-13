@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\MSIT\ADS-1\m18\Week-3_Assignment-1\Solution.java:20:31: '6' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS-1\m18\Week-3_Assignment-1\Solution.java:58: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 2 errors.

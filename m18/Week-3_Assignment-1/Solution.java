@@ -2,7 +2,8 @@ import java.util.Scanner;
 class Solution {
 	private Solution() { }
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		try {
+			Scanner sc = new Scanner(System.in);
 		BST<String, Integer> bs = new BST<String, Integer>();
 		int n = sc.nextInt();
 		for (int i = 1; i<= (6*n); i++) {
@@ -36,7 +37,10 @@ class Solution {
 					break;
 				}
 			}
-		} 
+		}
+		} catch (java.lang.ArrayIndexOutOfBoundsException exception) {
+			System.out.println("");
+		}
 	}
 }
 

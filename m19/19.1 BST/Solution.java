@@ -27,21 +27,21 @@ final class Solution {
                 case "get":
                 System.out.println(bs.get(b));
                 break;
-                case "max":
-                System.out.println(bs.max());
-                break;
-                case "min":
-                System.out.println(bs.min());
-                break;
+                // case "max":
+                // System.out.println(bs.max());
+                // break;
+                // case "min":
+                // System.out.println(bs.min());
+                // break;
                 case "floor":
                 System.out.println(bs.floor(b));
                 break;
                 case "ceiling":
                 System.out.println(bs.ceiling(b));
                 break;
-                case "select":
-                System.out.println(bs.select(Integer.parseInt(tokens[1])));
-                break;
+                // case "select":
+                // System.out.println(bs.select(Integer.parseInt(tokens[1])));
+                // break;
                 default:
                 break;
             }

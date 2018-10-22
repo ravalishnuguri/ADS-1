@@ -36,7 +36,7 @@ final class Solution {
             	}
             } else {
             	Book b = new Book(tokens[1], tokens[2],
-                Float.parseFloat(tokens[2 + 1]));
+                tokens[2 + 1]);
             switch (tokens[0]) {
                 case "put":
                 bs.put(b, Integer.parseInt(tokens[2 + 2]));
@@ -74,7 +74,7 @@ class Book {
     /**
      * var_description.
      */
-    private Float price;
+    private String price;
     /**
      * Constructs the object.
      */
@@ -87,7 +87,7 @@ class Book {
      * @param      bprice   The bprice
      */
     Book(final String bname, final String bauthor,
-        final Float bprice) {
+        final String bprice) {
         this.name = bname;
         this.author = bauthor;
         this.price = bprice;
@@ -113,7 +113,7 @@ class Book {
      *
      * @return     { description_of_the_return_value }
      */
-    public Float getprice() {
+    public String getprice() {
         return this.price;
     }
     /**
@@ -132,10 +132,11 @@ class Book {
             return -1;
         } else if (this.getauthor().compareTo(that.getauthor()) > 0) {
             return 1;
-        } else if (this.getprice() > that.getprice()) {
-            return 1;
-        } else if (this.getprice() < that.getprice()) {
-            return -1;
+        // } else if (this.getprice() > that.getprice()) {
+        //     return 1;
+        // } else if (this.getprice() < that.getprice()) {
+        //     return -1;
+        // } 
         } else {
             return 0;
         }

@@ -19,7 +19,7 @@ final class Solution {
             String st = sc.nextLine();
             String[] tokens = st.split(",");
             int toksize = tokens.length;
-            if(toksize < 3) {
+            if(toksize < 2) {
             	switch (tokens[0]) {
             	case "max":
             	// System.out.println("working");
@@ -30,7 +30,7 @@ final class Solution {
             	// System.out.println("working");
                 break;
                 case "select":
-                // System.out.println(bs.select(Integer.parseInt(tokens[1])).Print());
+                System.out.println(bs.select(Integer.parseInt(tokens[1])).Print());
             	// System.out.println("working");
                 break;
             	}

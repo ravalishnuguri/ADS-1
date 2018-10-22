@@ -1,8 +1,8 @@
-class BST<Key extends Comparable<Key>, Value> {
+public class BST<Key extends Comparable<Key>, Value> {
     Node root;
     int size = 0;
     private class Node {
-        public Book key;
+        private Book key;
         private Value value;
         private Node left;
         private Node right;
@@ -100,17 +100,6 @@ class BST<Key extends Comparable<Key>, Value> {
             return max(x.right);
         }
     }
-    // public Key floor(Book key) {
-    //     Node root = floor(root, key);
-    //     if (root == null) {
-    //         return null;
-    //     }
-    //     return root.key;
-    //     // return floor(root, key);
-    // }
-    // private Key floor(Node x, Book key) {
-    //     return key;
-    // }
     
     public Book floor(Book key) {
         Node x = floor(root, key);
@@ -191,7 +180,7 @@ class BST<Key extends Comparable<Key>, Value> {
             return select(x.left,  k); 
         }
         else if (t < k) {
-            return select(x.right, k-t-1); 
+            return select(x.right, k - t - 1); 
         }
         else {
             return x; 

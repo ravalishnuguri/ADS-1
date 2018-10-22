@@ -6,6 +6,7 @@ class BST<Key extends Comparable<Key>, Value> {
         private Value value;
         private Node left;
         private Node right;
+        private int count;
     }
     public void put(Book key, Value value) {
         if (key == null)  {
@@ -42,6 +43,7 @@ class BST<Key extends Comparable<Key>, Value> {
         else {
             root.value = value;
         }
+        root.count = 1 + size(root.left) + size(root.right);
         return root;
 
     }
@@ -76,26 +78,126 @@ class BST<Key extends Comparable<Key>, Value> {
         }
     }
 
-    public void min() {
-        System.out.println("still coding");
+    public Book min() {
+        return min(root).key;
+    }
+    private Node min(Node x) { 
+        if (x.left == null) {
+            return x; 
+        }
+        else {
+            return min(x.left); 
+        }
+    }
+    public Book max() {
+        return max(root).key;
+    }
+    private Node max(Node x) {
+        if (x.right == null) {
+            return x;
+        }
+        else {
+            return max(x.right);
+        }
+    }
 
-    }
-    public void max() {
-        System.out.println("still coding");
-    }
+
+
+    // public Key floor(Book key) {
+    //     Node root = floor(root, key);
+    //     if (root == null) {
+    //         return null;
+    //     }
+    //     return root.key;
+    //     // return floor(root, key);
+    // }
+    // private Key floor(Node x, Book key) {
+    //     return key;
+    // }
+    
     public Book floor(Book key) {
-        return floor(root, key);
+        Node x = floor(root, key);
+        if (x == null) {
+            return null;
+        }
+        return x.key;
     }
-    private Book floor(Node x, Book key) {
-        return key;
+    private Node floor(Node x, Book key) {
+         if (x == null) {
+            return null;
+         }
+         int cmp = key.compareTo(x.key);
+         if (cmp == 0) {
+            return x;
+         }
+         if (cmp < 0) {
+            return floor(x.left, key);            
+         }
+         Node t = floor(x.right, key);
+         if (t != null) {
+            return t;
+         }
+         else {
+            return x;
+         }
     }
+
+
     public Book ceiling(Book key) {
-        return ceiling(root, key);
+        Node x = ceiling(root, key);
+        if (x == null) {
+            return null;
+        }
+        return x.key;
     }
-    private Book ceiling(Node x, Book key) {
-        return key;
+    private Node ceiling(Node x, Book key) {
+        if (x == null) {
+            return null;
+         }
+         int cmp = key.compareTo(x.key);
+         if (cmp == 0) {
+            return x;
+         }
+         if (cmp > 0) {
+            return ceiling(x.right, key);            
+         }
+         Node t = ceiling(x.left, key);
+         if (t != null) {
+            return t;
+         }
+         else {
+            return x;
+         }
     }
-    public void select(int index) {
-    System.out.println("still coding");   
+    public int size() { 
+        return size(root);
+    }
+    private int size(Node x) {
+        if (x == null) {
+            return 0;
+        }
+        return x.count;
+    }
+
+    public Book select(int k) {
+        Node x = select(root, k);
+        return x.key;
+    }
+
+    // Return key of rank k. 
+    private Node select(Node x, int k) {
+        if (x == null) {
+            return null; 
+        }
+        int t = size(x.left); 
+        if (t > k) {
+            return select(x.left,  k); 
+        }
+        else if (t < k) {
+            return select(x.right, k-t-1); 
+        }
+        else {
+            return x; 
+        }
     }
 }

@@ -28,10 +28,10 @@ final class Solution {
                 System.out.println(bs.get(b));
                 break;
                 case "max":
-                bs.max();
+                System.out.println(bs.max());
                 break;
                 case "min":
-                bs.min();
+                System.out.println(bs.min());
                 break;
                 case "floor":
                 System.out.println(bs.floor(b));
@@ -40,7 +40,7 @@ final class Solution {
                 System.out.println(bs.ceiling(b));
                 break;
                 case "select":
-                bs.select(Integer.parseInt(tokens[1]));
+                System.out.println(bs.select(Integer.parseInt(tokens[1])));
                 break;
                 default:
                 break;

@@ -30,10 +30,10 @@ final class Solution {
                     bst.get(new Book(tokens[1], tokens[2], tokens[three])));
                 break;
             case "max":
-                System.out.println(bst.max());
+                System.out.println(bst.max().Print());
                 break;
             case "min":
-                System.out.println(bst.min());
+                System.out.println(bst.min().Print());
                 break;
             case "select":
                 System.out.println(bst.select(Integer.parseInt(tokens[1])).Print());

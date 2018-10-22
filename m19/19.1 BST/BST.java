@@ -1,13 +1,46 @@
+/**
+ * Class for bst.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 public class BST<Key extends Comparable<Key>, Value> {
+    /**
+     * created root node
+     */
     private Node root;
     int size = 0;
+    /**
+     * Class for node.
+     */
     private class Node {
+        /**
+         * created a variable key.
+         */
         private Key key;
+        /**
+         * created a variable value.
+         */
         private Value value;
+        /**
+         * created a variable left.
+         */
         private Node left;
+        /**
+         * created a variable right.
+         */
         private Node right;
+        /**
+         * created a variable count.
+         */
         private int count;
     }
+    /**
+     * created a  method put.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     */
     public void put(Key key, Value value) {
         if (key == null)  {
             System.out.println("null");
@@ -77,11 +110,22 @@ public class BST<Key extends Comparable<Key>, Value> {
             return x.value;
         }
     }
-    
+    /**
+     * created a method min.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key min() {
         return min(root).key;
     }
-    private Node min(Node x) { 
+    /**
+     * created a method min.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node min(Node x) {
         if (x.left == null) {
             return x; 
         }
@@ -89,9 +133,21 @@ public class BST<Key extends Comparable<Key>, Value> {
             return min(x.left); 
         }
     }
+    /**
+     * created a method max.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key max() {
         return max(root).key;
     }
+    /**
+     * created a method max.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node max(Node x) {
         if (x.right == null) {
             return x;
@@ -100,7 +156,13 @@ public class BST<Key extends Comparable<Key>, Value> {
             return max(x.right);
         }
     }
-    
+    /**
+     * created a method floor.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key floor(Key key) {
         Node x = floor(root, key);
         if (x == null) {
@@ -108,6 +170,14 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
         return x.key;
     }
+    /**
+     * created a method floor.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node floor(Node x, Key key) {
          if (x == null) {
             return null;
@@ -127,8 +197,13 @@ public class BST<Key extends Comparable<Key>, Value> {
             return x;
          }
     }
-
-
+    /**
+     * created a method ceiling.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key ceiling(Key key) {
         Node x = ceiling(root, key);
         if (x == null) {
@@ -136,6 +211,14 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
         return x.key;
     }
+    /**
+     * created a method ceiling.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node ceiling(Node x, Key key) {
         if (x == null) {
             return null;
@@ -155,22 +238,46 @@ public class BST<Key extends Comparable<Key>, Value> {
             return x;
          }
     }
+    /**
+     * created a method size.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() { 
         return size(root);
     }
+    /**
+     * created a method size.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private int size(Node x) {
         if (x == null) {
             return 0;
         }
         return x.count;
     }
-
+    /**
+     * created a method size.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key select(int k) {
         Node x = select(root, k);
         return x.key;
     }
-
-    // Return key of rank k. 
+    /**
+     * created a method select.
+     *
+     * @param      x     { parameter_description }
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node select(Node x, int k) {
         if (x == null) {
             return null; 

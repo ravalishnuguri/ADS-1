@@ -42,7 +42,7 @@ class BST<Key extends Comparable<Key>, Value> {
             size++;
         }
         int cmp = key.compareTo(root.key);
-        if(cmp < 0) {
+        if (cmp < 0) {
             root.left  = put(root.left,  key, value);
         }
         else if (cmp > 0) {

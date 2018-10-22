@@ -1,4 +1,4 @@
-public class Searchtable <Key extends Comparable<Key>, Value> {
+6public class Searchtable <Key extends Comparable<Key>, Value> {
     private static final int newcap = 2;
     private Key[] keys;
     private Value[] values;
@@ -7,7 +7,7 @@ public class Searchtable <Key extends Comparable<Key>, Value> {
         this(newcap);
     }
     public Searchtable(int capacity) {
-        keys = (Key[]) new Comparable[capacity]; 
+        keys = (Key[]) new Comparable[capacity];
         values = (Value[]) new Object[capacity];
     }
     public int size() {
@@ -94,16 +94,13 @@ public class Searchtable <Key extends Comparable<Key>, Value> {
             keys[j] = keys[j+1];
             values[j] = values[j+1];
         }
-
         n--;
         keys[n] = null;  // to avoid loitering
         values[n] = null;
-
         // resize if 1/4 full
         if (n > 0 && n == keys.length/4) {
             resize(keys.length/2);
         }
-
         assert check();
     }
      public Key select(int k) {

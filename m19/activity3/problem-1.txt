@@ -1,0 +1,25 @@
+Give the sequences of nodes examined when the methods in BST are used to compute each of the following quantities for the tree drawn at below.
+a. floor("Q") 
+b. select(5) 
+c. ceiling("Q") 
+d. rank("J") 
+e. size("D", "T") 
+f. keys("D", "T")
+
+the tree is  :::
+                        E
+                       / \
+                      D   Q
+                     /   / \
+                    A   J    T
+                        \    /
+                         M  S
+
+
+a. the floor is Q
+b. select of 5 gives the output as M
+c. ceil is also Q
+d. the rank of J is 3
+e. size of D and T is 4
+f. the keys of D and T are D, E, J, Q, S, T.
+               

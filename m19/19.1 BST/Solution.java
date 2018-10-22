@@ -40,11 +40,11 @@ final class Solution {
                 break;
             case "floor":
                 System.out.println(
-                    bst.floor(new Book(tokens[1], tokens[2], tokens[three])));
+                    bst.floor(new Book(tokens[1], tokens[2], tokens[three])).Print());
                 break;
             case "ceiling":
                 System.out.println(
-                    bst.ceiling(new Book(tokens[1], tokens[2], tokens[three])));
+                    bst.ceiling(new Book(tokens[1], tokens[2], tokens[three])).Print());
                 break;
             default:
                 System.out.println("default call");

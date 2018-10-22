@@ -1,8 +1,10 @@
 Starting audit...
 [ERROR] E:\MSIT\ADS-1\m19\19.1 BST\Solution.java:39: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\MSIT\ADS-1\m19\19.1 BST\Solution.java:43: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] E:\MSIT\ADS-1\m19\19.1 BST\Solution.java:47: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] E:\MSIT\ADS-1\m19\19.1 BST\Solution.java:75:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\MSIT\ADS-1\m19\19.1 BST\Solution.java:133:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\MSIT\ADS-1\m19\19.1 BST\Solution.java:133:19: Name 'Print' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\MSIT\ADS-1\m19\19.1 BST\Solution.java:134:5: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 7 errors.

@@ -22,16 +22,16 @@ final class Solution {
             if(toksize < 3) {
             	switch (tokens[0]) {
             	case "max":
-            	System.out.println("working");
+            	// System.out.println("working");
                 System.out.println((bs.max().Print()));
                 break;
                 case "min":
                 System.out.println(bs.min().Print());
-            	System.out.println("working");
+            	// System.out.println("working");
                 break;
                 case "select":
                 // System.out.println(bs.select(Integer.parseInt(tokens[1])).Print());
-            	System.out.println("working");
+            	// System.out.println("working");
                 break;
             	}
             } else {

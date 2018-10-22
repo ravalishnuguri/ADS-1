@@ -18,7 +18,24 @@ final class Solution {
         while (sc.hasNextLine()) {
             String st = sc.nextLine();
             String[] tokens = st.split(",");
-            Book b = new Book(tokens[1], tokens[2],
+            int toksize = tokens.length;
+            if(toksize < 3) {
+            	switch (tokens[0]) {
+            	case "max":
+            	System.out.println("working");
+                System.out.println((bs.max().Print()));
+                break;
+                case "min":
+                System.out.println(bs.min().Print());
+            	System.out.println("working");
+                break;
+                case "select":
+                // System.out.println(bs.select(Integer.parseInt(tokens[1])).Print());
+            	System.out.println("working");
+                break;
+            	}
+            } else {
+            	Book b = new Book(tokens[1], tokens[2],
                 Float.parseFloat(tokens[2 + 1]));
             switch (tokens[0]) {
                 case "put":
@@ -27,23 +44,16 @@ final class Solution {
                 case "get":
                 System.out.println(bs.get(b));
                 break;
-                // case "max":
-                // System.out.println(bs.max());
-                // break;
-                // case "min":
-                // System.out.println(bs.min());
-                // break;
+                
                 case "floor":
-                System.out.println(bs.floor(b));
+                System.out.println(bs.floor(b).Print());
                 break;
                 case "ceiling":
-                System.out.println(bs.ceiling(b));
+                System.out.println(bs.ceiling(b).Print());
                 break;
-                // case "select":
-                // System.out.println(bs.select(Integer.parseInt(tokens[1])));
-                // break;
                 default:
                 break;
+            }
             }
         }
     }
@@ -68,7 +78,7 @@ class Book {
     /**
      * Constructs the object.
      */
-    private Book() { }
+    public Book() { }
     /**
      * Constructs the object.
      *
@@ -129,5 +139,10 @@ class Book {
         } else {
             return 0;
         }
+    }
+    public String Print() {
+    	String m = "";
+    	m += this.getname() + ", " + this.getauthor() + ", " + this.getprice();
+    	return m;
     }
 }

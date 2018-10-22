@@ -1,14 +1,14 @@
 public class BST<Key extends Comparable<Key>, Value> {
-    Node root;
+    private Node root;
     int size = 0;
     private class Node {
-        private Book key;
+        private Key key;
         private Value value;
         private Node left;
         private Node right;
         private int count;
     }
-    public void put(Book key, Value value) {
+    public void put(Key key, Value value) {
         if (key == null)  {
             System.out.println("null");
         }
@@ -23,7 +23,7 @@ public class BST<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node put(Node root, Book key, Value value) {
+    private Node put(Node root, Key key, Value value) {
         if (root == null) {
             Node n = new Node();
             n.key = key;
@@ -47,7 +47,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         return root;
 
     }
-    public Value get(Book key) {
+    public Value get(Key key) {
         return get(root, key);
     }
     /**
@@ -58,7 +58,7 @@ public class BST<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Value get(Node x, Book key) {
+    private Value get(Node x, Key key) {
         if (key == null) {
             System.out.println("empty");
         }
@@ -78,7 +78,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
     }
     
-    public Book min() {
+    public Key min() {
         return min(root).key;
     }
     private Node min(Node x) { 
@@ -89,7 +89,7 @@ public class BST<Key extends Comparable<Key>, Value> {
             return min(x.left); 
         }
     }
-    public Book max() {
+    public Key max() {
         return max(root).key;
     }
     private Node max(Node x) {
@@ -101,14 +101,14 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
     }
     
-    public Book floor(Book key) {
+    public Key floor(Key key) {
         Node x = floor(root, key);
         if (x == null) {
             return null;
         }
         return x.key;
     }
-    private Node floor(Node x, Book key) {
+    private Node floor(Node x, Key key) {
          if (x == null) {
             return null;
          }
@@ -129,14 +129,14 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
-    public Book ceiling(Book key) {
+    public Key ceiling(Key key) {
         Node x = ceiling(root, key);
         if (x == null) {
             return null;
         }
         return x.key;
     }
-    private Node ceiling(Node x, Book key) {
+    private Node ceiling(Node x, Key key) {
         if (x == null) {
             return null;
          }
@@ -165,7 +165,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         return x.count;
     }
 
-    public Book select(int k) {
+    public Key select(int k) {
         Node x = select(root, k);
         return x.key;
     }
@@ -186,34 +186,4 @@ public class BST<Key extends Comparable<Key>, Value> {
             return x; 
         }
     }
-
-    //  public Iterable<Key> keys() {
-    //     if (isEmpty()) {
-    //         return new Queue<Key>();
-    //     }
-    //     return keys(min(), max());
-    // }
-    //  public Iterable<Key> keys(Key lo, Key hi) {
-    //     Queue<Key> queue = new Queue<Key>();
-    //     keys(root, queue, lo, hi);
-    //     return queue;
-    // } 
-
-    // private void keys(Node x, Queue<Key> queue, Key lo, Key hi) { 
-    //     if (x == null) {
-    //         return; 
-    //     }
-    //     int cmplo = lo.compareTo(x.key); 
-    //     int cmphi = hi.compareTo(x.key); 
-    //     if (cmplo < 0) {
-    //         keys(x.left, queue, lo, hi); 
-    //     }
-    //     if (cmplo <= 0 && cmphi >= 0) {
-    //         queue.enqueue(x.key); 
-    //     }
-    //     if (cmphi > 0) {
-    //         keys(x.right, queue, lo, hi); 
-    //     }
-    // }
-
 }

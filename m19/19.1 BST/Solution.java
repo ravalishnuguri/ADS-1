@@ -13,47 +13,41 @@ final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
-        BST<String, Integer> bs = new BST<String, Integer>();
-        while (sc.hasNextLine()) {
-            String st = sc.nextLine();
-            String[] tokens = st.split(",");
-            int toksize = tokens.length;
-            if(toksize < 2) {
-            	switch (tokens[0]) {
-            	case "max":
-            	// System.out.println("working");
-                System.out.println((bs.max().Print()));
-                break;
-                case "min":
-                System.out.println(bs.min().Print());
-            	// System.out.println("working");
-                break;
-                case "select":
-                System.out.println(bs.select(Integer.parseInt(tokens[1])).Print());
-            	// System.out.println("working");
-                break;
-            	}
-            } else {
-            	Book b = new Book(tokens[1], tokens[2],
-                Float.parseFloat(tokens[2 + 1]));
+        final int three = 3;
+        final int four = 4;
+
+        Scanner scan = new Scanner(System.in);
+        BST<Book, String> bst = new BST<Book, String>();
+        while (scan.hasNext()) {
+            String[] tokens = scan.nextLine().split(",");
             switch (tokens[0]) {
-                case "put":
-                bs.put(b, Integer.parseInt(tokens[2 + 2]));
+            case "put":
+                bst.put(new Book(tokens[1], tokens[2], tokens[three]),
+                    tokens[four]);
                 break;
-                case "get":
-                System.out.println(bs.get(b));
+            case "get":
+                System.out.println(
+                    bst.get(new Book(tokens[1], tokens[2], tokens[three])));
                 break;
-                
-                case "floor":
-                System.out.println(bs.floor(b).Print());
+            case "max":
+                System.out.println(bst.max());
                 break;
-                case "ceiling":
-                System.out.println(bs.ceiling(b).Print());
+            case "min":
+                System.out.println(bst.min());
                 break;
-                default:
+            case "select":
+                System.out.println(bst.select(Integer.parseInt(tokens[1])).Print());
                 break;
-            }
+            case "floor":
+                System.out.println(
+                    bst.floor(new Book(tokens[1], tokens[2], tokens[three])));
+                break;
+            case "ceiling":
+                System.out.println(
+                    bst.ceiling(new Book(tokens[1], tokens[2], tokens[three])));
+                break;
+            default:
+                System.out.println("default call");
             }
         }
     }
@@ -62,7 +56,7 @@ final class Solution {
 /**
  * Class for book.
  */
-class Book {
+class Book implements Comparable<Book> {
     /**
      * { var_description.
      */
@@ -74,7 +68,7 @@ class Book {
     /**
      * var_description.
      */
-    private Float price;
+    private String price;
     /**
      * Constructs the object.
      */
@@ -87,7 +81,7 @@ class Book {
      * @param      bprice   The bprice
      */
     Book(final String bname, final String bauthor,
-        final Float bprice) {
+        final String bprice) {
         this.name = bname;
         this.author = bauthor;
         this.price = bprice;
@@ -113,7 +107,7 @@ class Book {
      *
      * @return     { description_of_the_return_value }
      */
-    public Float getprice() {
+    public String getprice() {
         return this.price;
     }
     /**
@@ -132,10 +126,6 @@ class Book {
             return -1;
         } else if (this.getauthor().compareTo(that.getauthor()) > 0) {
             return 1;
-        } else if (this.getprice() > that.getprice()) {
-            return 1;
-        } else if (this.getprice() < that.getprice()) {
-            return -1;
         } else {
             return 0;
         }

@@ -68,7 +68,7 @@ class Book implements Comparable<Book> {
     /**
      * var_description.
      */
-    private String price;
+    private Double price;
     /**
      * Constructs the object.
      */
@@ -84,7 +84,7 @@ class Book implements Comparable<Book> {
         final String bprice) {
         this.name = bname;
         this.author = bauthor;
-        this.price = bprice;
+        this.price = Double.parseDouble(bprice);
     }
     /**
      * function_description.
@@ -107,7 +107,7 @@ class Book implements Comparable<Book> {
      *
      * @return     { description_of_the_return_value }
      */
-    public String getprice() {
+    public Double getprice() {
         return this.price;
     }
     /**

@@ -30,21 +30,22 @@ final class Solution {
                     bst.get(new Book(tokens[1], tokens[2], tokens[three])));
                 break;
             case "max":
-                System.out.println(bst.max().Print());
+                System.out.println(bst.max().toString());
                 break;
             case "min":
-                System.out.println(bst.min().Print());
+                System.out.println(bst.min().toString());
                 break;
             case "select":
-                System.out.println(bst.select(Integer.parseInt(tokens[1])).Print());
+                System.out.println(bst.select(
+                    Integer.parseInt(tokens[1])).toString());
                 break;
             case "floor":
-                System.out.println(
-                    bst.floor(new Book(tokens[1], tokens[2], tokens[three])).Print());
+                System.out.println(bst.floor(
+                    new Book(tokens[1], tokens[2], tokens[three])).toString());
                 break;
             case "ceiling":
-                System.out.println(
-                    bst.ceiling(new Book(tokens[1], tokens[2], tokens[three])).Print());
+                System.out.println(bst.ceiling(
+                    new Book(tokens[1], tokens[2], tokens[three])).toString());
                 break;
             default:
                 System.out.println("default call");
@@ -72,7 +73,7 @@ class Book implements Comparable<Book> {
     /**
      * Constructs the object.
      */
-    public Book() { }
+    private Book() { }
     /**
      * Constructs the object.
      *
@@ -130,9 +131,14 @@ class Book implements Comparable<Book> {
             return 0;
         }
     }
-    public String Print() {
-    	String m = "";
-    	m += this.getname() + ", " + this.getauthor() + ", " + this.getprice();
-    	return m;
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        String m = "";
+        m += this.getname() + ", " + this.getauthor() + ", " + this.getprice();
+        return m;
     }
 }

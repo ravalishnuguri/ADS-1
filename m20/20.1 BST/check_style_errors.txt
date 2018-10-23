@@ -1,2 +1,4 @@
 Starting audit...
+[ERROR] E:\MSIT\ADS-1\m20\20.1 BST\Solution.java:54:24: 'catch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
+Checkstyle ends with 1 errors.

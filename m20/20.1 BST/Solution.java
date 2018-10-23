@@ -40,12 +40,20 @@ final class Solution {
                     Integer.parseInt(tokens[1])).toString());
                 break;
             case "floor":
-                System.out.println(bst.floor(
+                try {
+                    System.out.println(bst.floor(
                     new Book(tokens[1], tokens[2], tokens[three])).toString());
+                } catch (java.lang.NullPointerException exception) {
+                    System.out.println("null");
+                }
                 break;
             case "ceiling":
-                System.out.println(bst.ceiling(
+                try {
+                    System.out.println(bst.ceiling(
                     new Book(tokens[1], tokens[2], tokens[three])).toString());
+                } catch(java.lang.NullPointerException exception) {
+                    System.out.println("null");
+                }
                 break;
             case "deleteMax":
                 bst.deleteMax();

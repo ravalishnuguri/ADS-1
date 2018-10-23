@@ -51,7 +51,7 @@ final class Solution {
                 try {
                     System.out.println(bst.ceiling(
                     new Book(tokens[1], tokens[2], tokens[three])).toString());
-                } catch(java.lang.NullPointerException exception) {
+                } catch (java.lang.NullPointerException exception) {
                     System.out.println("null");
                 }
                 break;

@@ -37,6 +37,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a  method put.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      key    The key
      * @param      value  The value
@@ -48,7 +50,8 @@ public class BST<Key extends Comparable<Key>, Value> {
         root = put(root, key, value);
     }
     /**
-     * the time complexity for the method is O(logN).
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      root   The root
      * @param      key    The key
@@ -80,12 +83,20 @@ public class BST<Key extends Comparable<Key>, Value> {
         return root;
 
     }
+    /**
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Value get(Key key) {
         return get(root, key);
     }
     /**
-     * the time complexity for the method is O(logN).
-     *
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      * @param      x     { parameter_description }
      * @param      key   The key
      *
@@ -112,6 +123,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method min.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @return     { description_of_the_return_value }
      */
@@ -120,6 +133,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method min.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      x     { parameter_description }
      *
@@ -135,6 +150,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method max.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @return     { description_of_the_return_value }
      */
@@ -143,6 +160,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method max.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      x     { parameter_description }
      *
@@ -158,6 +177,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method floor.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      key   The key
      *
@@ -172,6 +193,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method floor.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -199,6 +222,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method ceiling.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      key   The key
      *
@@ -213,6 +238,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method ceiling.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -240,6 +267,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method size.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @return     { description_of_the_return_value }
      */
@@ -248,6 +277,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method size.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      x     { parameter_description }
      *
@@ -261,6 +292,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method size.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      k     { parameter_description }
      *
@@ -272,6 +305,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * created a method select.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
      *
      * @param      x     { parameter_description }
      * @param      k     { parameter_description }
@@ -293,11 +328,23 @@ public class BST<Key extends Comparable<Key>, Value> {
             return x; 
         }
     }
-
+    /**
+     *created a method deledteMin.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
+     */
     public void deleteMin() {
         root = deleteMin(root);
     }
-
+    /**
+     * created a method deleteMin.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node deleteMin(Node x) {
         if (x.left == null) {
             return x.right;
@@ -306,11 +353,23 @@ public class BST<Key extends Comparable<Key>, Value> {
         x.count = size(x.left) + size(x.right) + 1;
         return x;
     }
-
+    /**
+     * created a method deleteMax.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
+     */
     public void deleteMax() {
         root = deleteMax(root);
     }
-
+    /**
+     * created a method deleteMax.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node deleteMax(Node x) {
         if (x.right == null) {
             return x.left;
@@ -319,11 +378,26 @@ public class BST<Key extends Comparable<Key>, Value> {
         x.count = size(x.left) + size(x.right) + 1;
         return x;
     }
-
+    /**
+     * created a method deledte.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
+     *
+     * @param      key   The key
+     */
     public void delete(Key key) {
         root = delete(root, key);
     }
-
+    /**
+     * created a method delete.
+     * the time complexity for the method is O(h).
+     * h is the height of the tree.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node delete(Node x, Key key) {
         if (x == null) {
             return null;

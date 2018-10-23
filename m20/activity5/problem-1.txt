@@ -1,0 +1,83 @@
+Draw the 2-3 tree that results when you insert the keys E A S Y Q U E S T I O N, in that order into an initially empty 2-3 tree.
+      0  1  2  3  4  5  6  7  8  9  10  11
+=====>E  A  S  Y  Q  U  E  S  T  I   O   N
+
+step-1::
+
+         E
+step-2::
+        
+         EA
+
+STEP-3::
+
+         EAS ==>     E
+                    / \
+                   A   S
+ 
+STEP-4::
+
+               E
+              / \
+             A   SY
+
+STEP-5::
+
+               E               ES
+              / \     ==>     / | \
+             A   QSY         A  Q  Y
+
+STEP-6::
+ 
+
+            ES
+          / | \
+         A  Q  UY
+
+STEP-7::
+
+            ES                  ESU                       S
+          / | \      ==>      / | | \         ==>        / \
+         A  Q  TUY           A  Q T  Y                  E   U
+                                                       / \  / \
+                                                      A  Q  T  Y
+
+STEP-8::
+                    S
+                   / \
+                  E    U
+                 / \   / \
+                A  IQ  T  Y
+
+STEP-9::
+                    S
+                   /  \
+                  E     U
+                 / \    / \
+                A  IOQ  T  Y
+
+STEP-10::
+
+                    S
+                   /  \
+                  EO    U
+                / | \   / \
+               A  I  Q  T  Y
+
+STEP-11::
+
+                    S
+                   /  \
+                  EO    U
+                / | \   / \
+               A  IN  Q  T  Y
+
+
+THE FINAL 2-3 SEARCH TREE IS ::
+
+                     S
+                   /  \
+                  EO    U
+                / | \   / \
+               A  IN  Q  T  Y
+

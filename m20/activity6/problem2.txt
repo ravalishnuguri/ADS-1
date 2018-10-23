@@ -1,0 +1,17 @@
+Draw a table that compare the worst, best and average cases of insertion, searching and deletion of Linear search symbol table, Binary search symbol table, Binary search tree and 2-3 Tree.
+
+
+
+
+implementation                guarantee               average case                      key
+                      search  insert  delete      search-hit  insert  delete         interface
+
+sequential search
+(unordered list)        N       N        N            ½ N        N       ½ N          equals()
+
+binary search
+(ordered array)        logN     N        N           logN       ½ N      ½ N         compareTo()
+
+BST                     N       N        N        1.39logN  1.39logN     root(N)     compareTo()
+
+2-3 search tree        logN    logN    logN         logN      logN       logN        compareTo()

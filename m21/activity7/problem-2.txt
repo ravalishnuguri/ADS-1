@@ -1,0 +1,16 @@
+Draw the red-black BST that results when you insert letters A to K in order into an initially empty red-black BST. Then, describe what happens in general when red-black BSTs are built by inserting keys in ascending order.
+
+the resultant red-black BST that we ge after inserting A B C D E F G H I J K is ::
+
+                    
+
+                   H
+               r/    \
+               D       J
+              / \     / \
+             B   F   I  K
+            / \  / \
+           A  C  E  G
+
+any tree that is inserted in ascending order is perfectly balanced and also if the number of insertions is equal to a power of 2 its also be a completly balanced tree.but our tree does have 11 insertions and it does not equal to power of 2.so, it is not completly balanced. 
+

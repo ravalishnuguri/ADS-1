@@ -1,0 +1,1 @@
+In the given trees, 3 and 4 satisfies all the conditions of left-leaning red-black BSTs. whereas 1 and 2 does not satisfy all the properties of left-leaning red-black BSTs.So, 3 and 4 are the red-black BSTs.

@@ -1,0 +1,13 @@
+Answer the previous question for the case when the keys are inserted in descending order.
+
+the keys K J I H G F E D C B A   when inserting in descending order is ::
+
+                   H
+               r/    \
+               D       J
+              / \     / \
+             B   F   I  K
+            / \  / \
+           A  C  E  G
+
+                                  the resultant tree is same whether it is inserted in ascending or descending order. descending order is left leaning and its process is very different than insertion in ascending order.the left path can get long during insertions but it can be adjusted with the properties.its always gonna be perfeclty balanced when insertions are performed in descendeing order.

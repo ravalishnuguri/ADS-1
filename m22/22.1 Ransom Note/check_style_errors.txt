@@ -1,14 +1,4 @@
 Starting audit...
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:3: Class Solution should be declared as final. [FinalClass]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:4:1: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:7:1: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:15:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:16:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:18:18: 'else' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:18:18: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:18:22: 'else' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:18:22: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS-1\m22\22.1 Ransom Note\Solution.java:17:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 1 errors.

@@ -43,7 +43,7 @@ public static void main(final String[] args) {
     if (!check) {
         System.out.println("Yes");
     } else {
-    System.out.println("No");
+    System.out.println("");
         }
     }
 }

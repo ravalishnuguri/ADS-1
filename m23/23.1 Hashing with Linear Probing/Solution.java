@@ -22,10 +22,10 @@ public static void main(final String[] args) {
                 case "put":
                     object.put(tokens[1], Integer.parseInt(tokens[2]));
                     break;
-                case "ge":
+                case "get":
                     System.out.println(object.get(tokens[1]));
                     break;
-                case "delee":
+                case "delete":
                     object.delete(tokens[1]);
                     break;
                 case "display":

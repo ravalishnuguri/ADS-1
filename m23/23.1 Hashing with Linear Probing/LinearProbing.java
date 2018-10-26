@@ -1,7 +1,10 @@
 import java.util.ArrayList;
-/**.
-LinearProbing the class 
-*/
+/**
+ * Class for linear probing.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class LinearProbing<Key, Value>{
 /**.
 capacity the capacity
@@ -84,6 +87,7 @@ public void resize(int capacity){
 /**
  * method for put.
  * it has a constant time complexity.
+ * Complexity is O(1).
  *
  * @param      key    The key
  * @param      value  The value
@@ -106,6 +110,7 @@ public void put(Key key, Value value){
 /**
  * gets the key.
  * it has a Constant time-complexity.
+ * Complexity is O(1).
  *
  * @param      key   The key
  *

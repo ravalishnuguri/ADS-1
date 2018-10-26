@@ -1,13 +1,24 @@
 import java.util.Scanner;
-
-final class Solution{
-    Solution(){ }
+/**
+ * class for Solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() { }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
 public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        LinearProbing<String, Integer> object = new LinearProbing<String, Integer>();
-        while(scan.hasNext()){
+        LinearProbing<String, Integer> object = new LinearProbing<String,
+        Integer>();
+        while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
-            switch(tokens[0]) {
+            switch (tokens[0]) {
                 case "put":
                     object.put(tokens[1], Integer.parseInt(tokens[2]));
                     break;
@@ -20,7 +31,8 @@ public static void main(final String[] args) {
                 case "display":
                     object.display();
                     break;
-                default: break;
+                default:
+                break;
             }
         }
     }

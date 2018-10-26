@@ -1,0 +1,9 @@
+Which of the following scenarios leads to expected linear running time for a random search hit in a linear-probing hash table?
+a. All keys hash to the same index.
+b. All keys hash to different indices.
+c. All keys hash to an even-numbered index.
+d. All keys hash to different even-numbered indices.
+
+
+Answer: a
+Explanation: If all keys hash to the same location then the i-th inserted key would need i lookups to be found. The probability of looking up i-th key is 1/n (since it’s random). If you know some probability it’s trivial to show that such lookups have linear time.

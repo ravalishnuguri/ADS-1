@@ -173,7 +173,7 @@ public void display(){
         for(Key s : keys()) {
             print += s + ":" + get(s) + ", ";
         }
-        print += print.substring(0, print.length() - 2) + "}";
-        System.out.println(print);
+        String newprint = print.substring(0, print.length() - 2) + "}";
+        System.out.println(newprint);
     }
 }

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 class Solution {
     private Solution() { }
+
     public static void between(Student[] a,Double m1, Double m2) {
         for (int i = 0; i < a.length ; i++) {
             if (a[i].getMarks() >= m1 && a[i].getMarks()<= m2) {
@@ -78,7 +79,7 @@ class Student implements Comparable<Student> {
         return this.marks;
     }
      public int compareTo(final Student that) {
-        if (this.getMarks() > that.getMarks()) {
+        if (this.getRollno() < that.getRollno()) {
             return 1;
         } else {
             return 0;

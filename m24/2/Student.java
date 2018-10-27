@@ -3,15 +3,15 @@
  */
 class Student implements Comparable<Student> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int rollno;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private String name;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Double marks;
     /**
@@ -55,7 +55,7 @@ class Student implements Comparable<Student> {
         return this.marks;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      that  The that
      *

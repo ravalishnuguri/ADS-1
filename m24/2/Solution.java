@@ -35,6 +35,7 @@ public static void great(Student[] a, Double m1) {
             // bst.put(new Student(tokens[0], tokens[1], tokens[2]), i);
             students[size++] = new Student(tokens[0], tokens[1], Double.parseDouble(tokens[2]));
         }
+        t.Sort(students, size);
         int no = sc.nextInt();
         sc.nextLine();
             for(int j = 0; j< no ; j++) {

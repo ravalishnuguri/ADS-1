@@ -32,10 +32,10 @@ public static void great(Student[] a, Double m1) {
         Selection t = new Selection();
         int num = sc.nextInt();
             Student[] students = new Student[num];
-        for(int i = 1; i <= num; i++) {
+        for(int i = 0; i < num; i++) {
             String[] tokens = sc.nextLine().split(",");
             // bst.put(new Student(tokens[0], tokens[1], tokens[2]), i);
-            students[size++] = new Student(tokens[0], tokens[1], Double.parseDouble(tokens[2]));
+            students[num] = new Student(tokens[0], tokens[1], Double.parseDouble(tokens[2]));
         }
         int no = sc.nextInt();
             while (no < 0) {

@@ -25,7 +25,7 @@ Starting audit...
 [ERROR] E:\MSIT\ADS-1\m24\2\Solution.java:28:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\MSIT\ADS-1\m24\2\Solution.java:28:29: Parameter args should be final. [FinalParameters]
 [ERROR] E:\MSIT\ADS-1\m24\2\Solution.java:35:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS-1\m24\2\Solution.java:38: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] E:\MSIT\ADS-1\m24\2\Solution.java:38: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] E:\MSIT\ADS-1\m24\2\Solution.java:43: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] E:\MSIT\ADS-1\m24\2\Solution.java:45: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] E:\MSIT\ADS-1\m24\2\Solution.java:53: Line has trailing spaces. [RegexpSingleline]

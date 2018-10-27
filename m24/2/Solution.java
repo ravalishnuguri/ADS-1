@@ -39,7 +39,8 @@ public static void great(Student[] a, Double m1) {
             students[size++] = new Student(tokens[0], tokens[1], Double.parseDouble(tokens[2]));
         }
         int no = sc.nextInt();
-            while (no < 0) {
+        sc.nextLine();
+            for(int j = 0; j< no ; j++) {
                 String[] tok = sc.nextLine().split(" ");
                 switch (tok[0]) {
                     case "BE":

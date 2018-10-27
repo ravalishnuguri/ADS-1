@@ -16,11 +16,9 @@ final class Solution {
      * @param      m2    The m 2
      */
     public static void put(Student[] a,int x) {
-        int count = 1;
         for (int i = 0; i < a.length; i++) {
-            if (a[i].getRollno() == x && count == 1) {
+            if (a[i].getRollno() == x) {
                 System.out.println(a[i].getName());
-                count--;
             }
         }
 }
@@ -31,7 +29,7 @@ final class Solution {
  * @param      m1    The m 1
  */
 public static void put1(Student[] a, int x) {
-    for (int i = 0; i < a.length; i++) {
+    for (int i = a.length; i < 0; i--) {
             if (a[i].getRollno() == x) {
                 System.out.println(a[i].getMarks());
             }

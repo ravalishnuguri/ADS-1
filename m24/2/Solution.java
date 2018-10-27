@@ -31,12 +31,12 @@ public static void great(Student[] a, Double m1) {
         // BST<String, Integer> bst = new BST<String, Integer>();
         Selection t = new Selection();
         int num = sc.nextInt();
-            Student[] students = new Student[num];
+        Student[] students = new Student[num];
+        sc.nextLine();
         for(int i = 0; i < num; i++) {
-            sc.hasNext();
             String[] tokens = sc.nextLine().split(",");
             // bst.put(new Student(tokens[0], tokens[1], tokens[2]), i);
-            students[num] = new Student(tokens[0], tokens[1], Double.parseDouble(tokens[2]));
+            students[size++] = new Student(tokens[0], tokens[1], Double.parseDouble(tokens[2]));
         }
         int no = sc.nextInt();
             while (no < 0) {

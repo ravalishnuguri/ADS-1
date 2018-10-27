@@ -1,30 +1,59 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() { }
-
+    /**
+     * { function_description }
+     *
+     * @param      a     { parameter_description }
+     * @param      m1    The m 1
+     * @param      m2    The m 2
+     */
     public static void between(Student[] a,Double m1, Double m2) {
         // Selection t = new Selection();
         // t.Sort(a, a.length);
-        for (int i = 0; i < a.length ; i++) {
-            if (a[i].getMarks() >= m1 && a[i].getMarks()<= m2) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i].getMarks() >= m1 && a[i].getMarks() <= m2) {
                 System.out.println(a[i].getName());
             }
     }
 }
+/**
+ * { function_description }
+ *
+ * @param      a     { parameter_description }
+ * @param      m1    The m 1
+ */
 public static void less(Student[] a, Double m1) {
-    for (int i = 0; i< a.length ; i++) {
+    for (int i = 0; i < a.length; i++) {
         if (a[i].getMarks() <= m1) {
             System.out.println(a[i].getName());
         }
     }
 }
+/**
+ * { function_description }
+ *
+ * @param      a     { parameter_description }
+ * @param      m1    The m 1
+ */
 public static void great(Student[] a, Double m1) {
-    for (int i =0; i< a.length;i++) {
-        if(a[i].getMarks() >= m1) {
+    for (int i = 0; i< a.length; i++) {
+        if (a[i].getMarks() >= m1) {
             System.out.println(a[i].getName());
         }
     }
     }
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = 0;
@@ -53,9 +82,9 @@ public static void great(Student[] a, Double m1) {
                     case "GE":
                     great(students, Double.parseDouble(tok[1]));
                     break;
-                    
+                    default:
+                    break;                    
                 }
-                
             }
         }
 }

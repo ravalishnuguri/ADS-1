@@ -83,6 +83,8 @@ class Student implements Comparable<Student> {
      public int compareTo(final Student that) {
         if (this.getRollno() > that.getRollno()) {
             return 1;
+        } else if(this.getRollno() < that.getRollno()) {
+            return -1;
         } else {
             return 0;
         }

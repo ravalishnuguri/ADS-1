@@ -16,10 +16,11 @@ final class Solution {
      * @param      m2    The m 2
      */
     public static void put(Student[] a,int x) {
+        int count = 1;
         for (int i = 0; i < a.length; i++) {
-            if (a[i].getRollno() == x) {
+            if (a[i].getRollno() == x && count == 1) {
                 System.out.println(a[i].getName());
-                break;
+                count--;
             }
         }
 }

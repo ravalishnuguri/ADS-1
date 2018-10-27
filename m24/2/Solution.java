@@ -3,6 +3,8 @@ class Solution {
     private Solution() { }
 
     public static void between(Student[] a,Double m1, Double m2) {
+        Selection t = new Selection();
+        t.Sort(a, a.length);
         for (int i = 0; i < a.length ; i++) {
             if (a[i].getMarks() >= m1 && a[i].getMarks()<= m2) {
                 System.out.println(a[i].getName());

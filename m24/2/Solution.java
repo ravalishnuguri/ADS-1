@@ -33,6 +33,7 @@ public static void great(Student[] a, Double m1) {
         int num = sc.nextInt();
             Student[] students = new Student[num];
         for(int i = 0; i < num; i++) {
+            sc.hasNext();
             String[] tokens = sc.nextLine().split(",");
             // bst.put(new Student(tokens[0], tokens[1], tokens[2]), i);
             students[num] = new Student(tokens[0], tokens[1], Double.parseDouble(tokens[2]));

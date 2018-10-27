@@ -6,7 +6,7 @@ Dan
 Abegg
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:38)
+	at Solution.main(Solution.java:39)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -57,7 +57,7 @@ Abegg
 Brian Caffrey
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:38)
+	at Solution.main(Solution.java:39)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -125,7 +125,7 @@ Megon
 Meili Cady
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:38)
+	at Solution.main(Solution.java:39)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -845,5 +845,5 @@ Thelma Page
 Vicky Hales-Dutton
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:38)
+	at Solution.main(Solution.java:39)
 ----------------------------------------

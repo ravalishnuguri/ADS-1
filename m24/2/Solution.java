@@ -5,7 +5,6 @@ class Solution {
         for (int i = 0; i < a.length ; i++) {
             if (a[i].getMarks() >= m1 && a[i].getMarks()<= m2) {
                 System.out.println(a[i].getName());
-                System.out.println();
             }
     }
 }
@@ -13,7 +12,6 @@ public static void less(Student[] a, Double m1) {
     for (int i = 0; i< a.length ; i++) {
         if (a[i].getMarks() <= m1) {
             System.out.println(a[i].getName());
-            System.out.println();
         }
     }
 }
@@ -21,7 +19,6 @@ public static void great(Student[] a, Double m1) {
     for (int i =0; i< a.length;i++) {
         if(a[i].getMarks() >= m1) {
             System.out.println(a[i].getName());
-            System.out.println();
         }
     }
     }
